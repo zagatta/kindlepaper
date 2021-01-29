@@ -40,7 +40,7 @@ class Jameson:
     def __saveLastUpdate__(self):
          #save last updated timestamp
         f = open(Constants.LAST_UDATE_FILE, "a")
-        #f.write(Constants.NEWLINE + self.now.strftime(Constants.DATE_FORMAT))
+        f.write(Constants.NEWLINE + self.now.strftime(Constants.DATE_FORMAT))
         f.close()
 
     def __getAllNewEntries__(self):
